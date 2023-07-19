@@ -108,16 +108,38 @@ form button:hover {
   background: #c40812;
   transform: scale(0.98);
 }
+.form-wrapper :where(label, p, small, a) {
+	color: #b3b3b3;
+}
 .form-help {
   display: flex;
   justify-content: space-between;
-  color: #b3b3b3;
-  font-size: 0.75rem;
 }
-.form-help a {
-  color: #b3b3b3;
+.form-help .remember-me input {
+  margin-right: 5px;
+  accent-color: #b3b3b3;;
+}
+.form-wrapper a {
   text-decoration: none;
 }
 .form-help a:hover {
   text-decoration: underline;
 }
+form .form-help :where(label, a) {
+	font-size: 0.9rem;
+}
+
+.form-wrapper p a {
+	color: #fff;
+}
+
+.form-wrapper small {
+	display: block;
+	margin-top: 15px;
+	color: #b3b3b3;
+}
+
+.form-wrapper small a {
+	color: #0071eb;
+}
+
