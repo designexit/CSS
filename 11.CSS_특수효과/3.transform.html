@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <style>
+      body {
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .box {
+        background: white;
+        width: 300px;
+        height: 300px;
+        /* Transform - rotate, scale, skew */
+        transform: rotate(45deg) _translate(200px, 200px);
+        /* transform: skew(25deg); */
+        /* transform: scale(2); */
+        /* transition은 속의 상태가 바뀔때 시간 */
+        transition: all 1s ease-in-out;
+      }
+
+      .box:hover {
+        transform: rotate(360deg) scale(1.2) translate(100px, 100px);
+        /* transform: skew(25deg); */
+        /* transform: scale(1.2); */
+        background-color: coral;
+        /* border-radius: 50%;
+        background-color: blue; */
+        /* transform: translateY(100px); */
+        /* transform: translateX(-100px); */
+        /* x & y */
+        /* transform: translate(100px, 100px); */
+        /* transform: translate3d(100px, 100px, 100px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
